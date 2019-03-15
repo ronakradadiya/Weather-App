@@ -1,0 +1,26 @@
+.weather-card {
+  text-align: center;
+  min-width: 100px;
+  cursor: pointer;
+  padding: 10px 0px;
+  padding-top: 5px;
+}
+
+.day {
+  margin-bottom: 5px;
+}
+
+.temperature {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.temperature span:nth-child(1) {
+  margin-right: 10px;
+}
+
+.day,
+.max-temperature {
+  font-weight: bold;
+}
