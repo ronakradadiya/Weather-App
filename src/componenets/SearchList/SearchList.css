@@ -1,0 +1,48 @@
+.search-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  border-bottom: 1px solid #6b7283;
+  animation: fadein 1s;
+}
+
+@keyframes fadein {
+  0% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.weather-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.weather-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.weather-icon img {
+  width: 100%;
+}
+
+.temp-value {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.weather-value,
+.state-value {
+  color: #6b7283;
+}
+
+.temperature-value,
+.city-value {
+  font-weight: bold;
+}

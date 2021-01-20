@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.spin-center {
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.daily-forecast {
+  display: flex;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.show-temperature {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.show-temperature h1 {
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 60px;
+}
+
+.presssure-humidity-stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pressure-stats,
+.humidity-stats {
+  background-color: #f5faff;
+  flex-basis: 49%;
+  padding: 10px 0px 20px 30px;
+}
+
+.graph-container {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 0px 20px;
+  margin-top: 30px;
+  border-radius: 8px;
+}
+
+@media (max-width: 991px) {
+  .daily-forecast {
+    overflow-x: scroll;
   }
 }
